@@ -2302,6 +2302,12 @@ ul.actions.special {
   margin-left: 0;
 }
 
+@media screen and (min-width: 992px) {
+  .content ul.btn {
+    justify-content: flex-start;
+  }
+}
+
 ul.actions.special li:first-child {
   padding-left: 0;
 }
@@ -3655,8 +3661,6 @@ body.is-menu-visible #menu {
   -ms-justify-content: center;
   justify-content: center;
   cursor: default;
-  /* height: 100vh; */
-  /* min-height: 35em; */
   height: 50rem;
   overflow: hidden;
   position: relative;
@@ -3796,7 +3800,7 @@ body.is-menu-visible #menu {
   #banner {
     /* padding: 7em 3em 5em 3em; */
     padding: 5rem 0;
-    height: 500px;
+    height: 750px;
     min-height: 0;
   }
 
@@ -3810,6 +3814,12 @@ body.is-menu-visible #menu {
 
   #banner .more {
     display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #banner {
+    height: 500px;
   }
 }
 
@@ -4038,15 +4048,27 @@ body.is-mobile #main > header {
 /* Landing */
 
 body.landing #page-wrapper {
-  /* background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../images/banner.jpg');
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../images/banner.jpg');
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../images/banner.jpg');
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../images/banner.jpg'); */
   background-image: url('../../images/hero.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+}
+
+body.landing .story-hero {
+  background-image: url('../../images/story-hero.jpg') !important;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: contain;
+  padding-top: 0;
+  width: 100%;
+}
+
+body.landing .team-hero {
+  background-image: url('../../images/team-hero.jpg') !important;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -4058,13 +4080,15 @@ body.landing #footer {
   background-color: rgba(29, 36, 42, 0.9);
 }
 
-body.is-mobile.landing #page-wrapper {
+body.is-mobile.landing .story-hero {
   background: none;
+  background-image: url('../../images/story-hero.jpg') !important;
+  background-size: contain;
 }
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-  background-image: url('../../images/hero.jpg');
+  /* background-image: url('../../images/hero.jpg'); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4121,4 +4145,25 @@ body.is-mobile.landing #footer {
 
 .book-text {
   text-align: center;
+}
+
+.inner-box {
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem 0;
+}
+
+.member-img {
+  width: 100%;
+}
+
+.member-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.member-title {
+  padding-top: 0 !important;
 }
