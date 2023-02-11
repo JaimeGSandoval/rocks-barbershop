@@ -77,3 +77,5 @@
     });
   }
 })(jQuery);
+
+ScrollReveal().reveal('.animate', { delay: 800, distance: '10%' });
