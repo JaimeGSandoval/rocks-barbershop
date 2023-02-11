@@ -1,15 +1,10 @@
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function ($) {
   var $window = $(window),
     $body = $('body'),
     $wrapper = $('#page-wrapper'),
     $banner = $('#banner'),
-    $header = $('#header');
+    $header = $('#header'),
+    $services = $('#services-container');
 
   // Breakpoints.
   breakpoints({
@@ -41,8 +36,13 @@
 
   // Scrolly.
   $('.scrolly').scrolly({
-    speed: 1500,
+    speed: 1000,
     offset: $header.outerHeight(),
+  });
+
+  $('.scrolly').scrolly({
+    speed: 1000,
+    offset: $services.outerHeight(),
   });
 
   // Menu.
@@ -77,5 +77,3 @@
     });
   }
 })(jQuery);
-
-ScrollReveal().reveal('.animate', { delay: 600, distance: '10%' });
