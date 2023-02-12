@@ -4048,8 +4048,6 @@ body.is-mobile #main > header {
 /* Landing */
 
 body.landing #page-wrapper {
-  /* background-image: url('../../images/hero.jpg'); */
-  /* background-attachment: fixed; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4057,8 +4055,6 @@ body.landing #page-wrapper {
 }
 
 body.landing .story-hero {
-  /* background-image: url('../../images/story-hero.jpg') !important; */
-  /* background-attachment: fixed; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -4068,8 +4064,6 @@ body.landing .story-hero {
 }
 
 body.landing .team-hero {
-  /* background-image: url('../../images/team-hero.jpg') !important; */
-  /* background-attachment: fixed; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4082,13 +4076,11 @@ body.landing #footer {
 
 body.is-mobile.landing .story-hero {
   background: none;
-  /* background-image: url('../../images/story-hero.jpg') !important; */
   background-size: contain;
 }
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-  /* background-image: url('../../images/hero.jpg'); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4111,15 +4103,15 @@ body.is-mobile.landing #footer {
 }
 
 .about-banner {
-  background-image: url('../../images/story-hero.jpg') !important;
+  background-image: url('../../images/story-hero.jpg');
 }
 
 .team-banner {
-  background-image: url('../../images/team-hero.jpg') !important;
+  background-image: url('../../images/team-hero.jpg');
 }
 
 .contact-banner {
-  background-image: url('../../images/contact-hero.jpg') !important;
+  background-image: url('../../images/contact-hero.jpg');
 }
 
 #banner,
