@@ -78,4 +78,4 @@
   }
 })(jQuery);
 
-ScrollReveal().reveal('.animate', { delay: 800, distance: '10%' });
+ScrollReveal().reveal('.animate', { delay: 400, distance: '10%' });
