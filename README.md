@@ -1,5 +1,5 @@
 # Rock's Barbershop
-Rock's Barbershop isn't just a place to get a haircut or a shave. It's the hub of community – where people got together to connect, exchange ideas.
+Rock's Barbershop isn't just a place to get a haircut or a shave. It's the hub of community – where people got together to connect and exchange ideas.
 
 ## Live Demo
 Try the live demo at https://rocksbarbershop.netlify.app/
